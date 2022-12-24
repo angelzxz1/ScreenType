@@ -10,7 +10,7 @@ type Props = {
 };
 const Main = ({ children, router, title }: Props) => {
 	return (
-		<Box as="main">
+		<Box as="main" >
 			<Head>
 				<meta charSet="utf-8" />
 				<meta
@@ -27,7 +27,7 @@ const Main = ({ children, router, title }: Props) => {
 				</title>
 			</Head>
 			<NavBar path={router.asPath} />
-			<Container maxW="container.md" pt={14}>
+			<Container maxW="container.md" pt={14} h="100vh">
 				{children}
 			</Container>
 		</Box>
